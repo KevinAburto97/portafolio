@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Kevin Aburto</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/web-design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway&display=swap" rel="stylesheet">    
+
+</head>
+<body>
+    <header class="head">
+        <div class="logo">Kevin Aburto</div>
+        <div class="menu-toggle">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="head-navigation">
+            <ul class="menu-list">
+                <li class="menu-item"><a class="menu-link" href="#about-me" onclick="animation()">Sobre mi</a></li>
+                <li class="menu-item"><a class="menu-link" href="#skills">Skills</a></li>
+                <li class="menu-item"><a class="menu-link" href="#education">Formación</a></li>
+                <li class="menu-item"><a class="menu-link" href="#experience">Proyectos</a></li>
+                <li class="menu-item"><a class="menu-link" href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="description container">
+            <h1 class="description__title">¡Hola!, mi nombre es Kevin Aburto y soy <span id="dev-description">Desarrollador de Software</span></h1>
+            <p class="description__text">Soy un desarrollador apasionado por la tecnología. Dispuesto a asumir nuevos retos, entusiasta y siempre buscando que estar actualizado en esta era tecnológica.</p>
+            <img class="description__photo" src="./img/foto.jpeg" alt="Foto de Kevin Aburto">
+            <ul class="description__social">
+                <li><a href="https://www.linkedin.com/in/kevin-aburto-cordova"><img class="social-media-img" src="./img/social-media/linkedin.png" alt="Linkedin imagen"></a></li>
+                <li><a href="https://github.com/KevinAburto97"><img class="social-media-img" src="./img/social-media/github.png" alt="Github imagen"></a></li>
+                <li><a href="https://www.instagram.com/kevin_aburto/" target="_blank"><img class="social-media-img" src="./img/social-media/instagram.png" alt="Instagram imagen"></a></li>
+            </ul>
+        </section>
+        <section class="about-me container" id="about-me">
+            <h1 class="title">Sobre mi</h1>
+            <p class="about-me__text">Soy una persona autodidacta, siempre en busca de nuevos conocimientos y dispuesto a enfrentar desafíos. Me apasiona aprender por mi cuenta y adquirir nuevas habilidades. Además, tengo un fuerte espíritu colaborativo y me desempeño de manera excepcional en equipos de trabajo, aportando ideas, escuchando a los demás y trabajando en armonía para alcanzar objetivos comunes.</p>
+            <p class="about-me__text">Una de mis fortalezas es mi capacidad para resolver problemas. Ante situaciones desafiantes, puedo analizarlas desde diferentes perspectivas y encontrar soluciones efectivas. Me gusta enfrentar desafíos complejos, porque considero que son oportunidades para crecer y aprender.</p>
+        </section>
+        <section class="skills" id="skills">
+            <h1 class="title">Skills</h1>
+            <ul class="skills__list">
+                <li>
+                    <img src="./img/languages-icons/js.png" alt="">
+                    <p class="skills__description">JavaScript</p>
+                </li>
+                <li>
+                    <img src="./img/languages-icons/php.png" alt="">
+                    <p class="skills__description">PHP</p>
+                </li>
+                <li>
+                    <img src="./img/languages-icons/c-.png" alt="">
+                    <p class="skills__description">C#</p>
+                </li>
+                <li>
+                    <img src="./img/languages-icons/nodejs.png" alt="">
+                    <p class="skills__description">Node JS</p>
+                </li>
+                <li>
+                    <img src="./img/languages-icons/mysql.png" alt="">
+                    <p class="skills__description">MySQL</p>
+                </li>
+                <li>
+                    <img src="./img/languages-icons/android.png " alt="">
+                    <p class="skills__description">Kotlin</p>
+                </li>
+            </ul>
+        </section>
+        <section class="education" id="education">
+            <h1 class="title">Formación Academica</h1>
+            <ul class="education__list">
+                <li>
+                    <img src="./img/academic/senati.png" alt="Imagen logo Senati">
+                    <h3 class="education__list-title">Desarrollo de Software</h3>
+                    <p class="education__list-text">2017 - Senati</p>
+                </li>
+                <li>
+                    <img src="./img/academic/alura.png" alt="Imagen logo Alura">
+                    <h3 class="education__list-title">Formación Front-End</h3>
+                    <p class="education__list-text">2023 - Alura</p>
+                </li>
+                <li>
+                    <img src="./img/academic/linkedin-learning.jpg" alt="Imagen logo Linkedin">
+                    <h3 class="education__list-title">Career Essentials in Software Development</h3>
+                    <p class="education__list-text">2023 - Linkedin Learning | Microsoft</p>
+                </li>
+            </ul>
+        </section>
+        <section class="experience" id="experience">
+            <h1 class="title">Experiencia Profesional</h1>
+            <ul class="experience__list">
+                <li>
+                    <img src="./img/projects/encriptador-alura.png" alt="Imagen Encriptador Alura">
+                    <h3 class="experience__list-title">Encriptador de Texto</h3>
+                    <p class="experience__list-text">Challenge Oracle</p>
+                    <div class="experience__list-btn_content">
+                        <a href="#" class="btn experience__list-btn-repository">Repositorio</a>
+                        <a href="#" class="btn experience__list-btn-demo">Ver Demo</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/projects/impresión-tickets-lacalera.png" alt="Imagen Impresor de Tickets - La Calera">
+                    <h3 class="experience__list-title">Impresor de Tickets</h3>
+                    <p class="experience__list-text">Proyecto - La Calera</p>
+                    <div class="experience__list-btn_content">
+                        <a href="#" class="btn experience__list-btn-repository">Repositorio</a>
+                        <a href="#" class="btn experience__list-btn-demo">Ver Demo</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/projects/dulce-delicia.png" alt="Imagen Dulce Delicia">
+                    <h3 class="experience__list-title">Dulce Delicia</h3>
+                    <p class="experience__list-text">Proyecto - Simple Page</p>
+                    <div class="experience__list-btn_content">
+                        <a href="#" class="btn experience__list-btn-repository">Repositorio</a>
+                        <a href="https://dulce-delicia.vercel.app/" class="btn experience__list-btn-demo">Ver Demo</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/projects/app-comedores.png" alt="Imagen App Comedores">
+                    <h3 class="experience__list-title">Control de Comedores</h3>
+                    <p class="experience__list-text">App - Comedores La Calera</p>
+                    <div class="experience__list-btn_content">
+                        <a href="#" class="btn experience__list-btn-repository">Repositorio</a>
+                        <a href="#" class="btn experience__list-btn-demo">Ver Demo</a>
+                    </div>
+                </li>             
+            </ul>
+        </section>
+        <section class="contact container" id="contact">
+            <h1 class="title">Contacto</h1>
+            <div class="contact-text">
+                <p class="f-bold f-montserrat">¿Quieres contactarme?</p>
+                <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+            </div>
+            <form action="#" class="form-contact">
+                <div class="form-contact-container">
+                    <input type="text" id="nombre" class="form-input" required>
+                    <label class="form-label" for="nombre">Nombre</label>
+                </div>
+                <div class="form-contact-container">
+                    <input type="email" id="correo" class="form-input" required>
+                    <label class="form-label" for="correo">E-mail</label>
+                </div>
+                <div class="form-contact-container">
+                    <input type="text" id="asunto" class="form-input" required>
+                    <label class="form-label" for="asunto">Asunto</label>
+                </div>
+                <div class="form-contact-container">
+                    <textarea class="form-input" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    <label class="form-label" for="mensaje">Mensaje</label>
+                </div>
+                <button type="button" class="btn-send-form">
+                    <span class="button__icon">
+                        <ion-icon name="send-outline"></ion-icon>
+                    </span>
+                    <span class="button__text">Enviar</span>
+                </button>
+            </form>
+        </section>
+        <footer class="footer container">
+            <p>Desarrollado por Kevin Aburto Cordova - 2023</p>
+            <div class="footer__social-media">
+                <a href="https://github.com/KevinAburto97"><img src="./img/social-media/github.png" alt="git"></a>
+                <a href="https://www.linkedin.com/in/kevin-aburto-cordova"><img src="./img/social-media/linkedin.png" alt="linkedin"></a>
+            </div>
+        </footer>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

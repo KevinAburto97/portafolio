@@ -1,0 +1,82 @@
+@media screen and (min-width: 768px) {
+    .logo{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .head-navigation{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.3rem;
+        position: initial;
+        height: 100%;
+        width: fit-content;
+    }  
+
+    .menu-toggle{
+        display: none;
+    }
+
+    .menu-list{
+        display: flex;
+
+    }
+
+    .head-navigation .menu-item{
+        opacity: 1;
+        margin: 1rem;
+    }
+    
+    .menu-list .menu-item .menu-link{
+        color: var(--color-white);
+        display: block;
+        font-size: 18px;
+        transition: 0.5s;
+    }
+
+    .about-me{
+        padding: 2rem;
+    }
+
+    .about-me .title{
+        text-align: center;
+    }
+
+    .about-me__text {
+        font-size: 1rem;
+    }
+
+    .skills__list,
+    .experience__list,
+    .education__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .education__list li{
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        margin: 0.75rem;
+    }
+
+    .experience__list li{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        padding: 2%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__social-media{
+        margin-top: 0;
+    }
+}
